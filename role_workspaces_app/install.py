@@ -54,14 +54,16 @@ def build_workspace_content(config):
             }
         })
 
-        for shortcut in section["shortcuts"]:
+        for doc in section["shortcuts"]:
 
             content.append({
                 "type": "shortcut",
                 "data": {
-                    "label": shortcut,
-                    "link_to": shortcut,
-                    "type": "DocType"
+                    "shortcut_name": doc,
+                    "label": doc,
+                    "link_to": doc,
+                    "type": "DocType",
+                    "doc_view": "List"
                 }
             })
 
