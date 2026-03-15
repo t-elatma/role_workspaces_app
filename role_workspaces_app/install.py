@@ -59,9 +59,9 @@ def build_workspace_content(config):
             content.append({
                 "type": "shortcut",
                 "data": {
-                    "shortcut_name": shortcut,
-                    "type": "DocType",
-                    "doc_view": "List"
+                    "label": shortcut,
+                    "link_to": shortcut,
+                    "type": "DocType"
                 }
             })
 
