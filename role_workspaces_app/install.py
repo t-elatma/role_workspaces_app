@@ -25,7 +25,7 @@ def create_single_workspace(config):
         "indicator_color": config["color"],
         "public": 1,
         "sequence_id": config["sequence"],
-        "content": json.dumps(content),
+        "content": frappe.as_json(content),
         "roles": [
             {"role": config["role"]}
         ]
